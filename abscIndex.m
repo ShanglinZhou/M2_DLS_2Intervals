@@ -20,7 +20,6 @@ for i = 1:maxTime1-1
     AbsR(:,i) = W_abs./(W_abs + W_scale);
 end
 
-AbsR(isnan(AbsR)) = 0.5;
 
 [~,minInd] = min(abscDist,[],2);% minimun distance between psth1 and time-warped psth2 at minInd
 temporal_Index = minInd./maxTime1;
