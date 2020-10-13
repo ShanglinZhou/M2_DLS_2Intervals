@@ -17,7 +17,7 @@ function [SqI, PE, TS] = SeqIndexDB(Data,NumEntropyBins)
 % SqI: Sequentiality Index
 % PE: Peak Entropy
 % TS: mean Temporal Sparsity
-% Dean Buonomano 9/14/2019
+% Dean Buonomano and Shanglin Zhou 9/14/2019
 
 [numTrials,numUnits, max_t]=size(Data);
 binsize = (max_t/(NumEntropyBins-1));
